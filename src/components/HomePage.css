@@ -1,0 +1,30 @@
+.searchBarStyle{
+    text-align: center;
+    width: 35%;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 20%;
+    outline: none
+}
+
+.formStyle{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.listStyle{
+    list-style-type: none;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.listItemStyle{
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: whitesmoke
+}
+
+.listItemStyle:hover{
+    color:goldenrod
+}

@@ -1,0 +1,31 @@
+.imgStyle{
+    height: 300px;
+    width: 100px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.container{
+    margin: 50px;
+}
+
+.imgDiv{
+    text-align: center;
+    margin-top: 5%;
+    background-color: #FFFFFF;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+}
+
+html {
+    background-color: #000000; 
+  }
