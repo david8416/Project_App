@@ -11,7 +11,7 @@ class BeerDescription extends React.Component {
     this.state = { color: '#000000' }
   }
   render() {
-
+    //Using the object from the other component to fill in the table
     return (
       <body className="bodyStyle">
         <div style={{ background: this.state.color }} id="main">

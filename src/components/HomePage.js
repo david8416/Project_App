@@ -4,6 +4,7 @@ import "./HomePage.css"
 
 
 class HomePage extends React.Component {
+  //intializing variables
   state = {
     searchValue: "",
     beers: [],
@@ -11,6 +12,7 @@ class HomePage extends React.Component {
   };
 
   onChange = event => {
+    //function to listen to changes in the search bar
     const { value } = event.target;
     this.setState({
       searchValue: value
@@ -20,6 +22,7 @@ class HomePage extends React.Component {
   };
 
   search = searchValue => {
+    //Calling th API and fetching the data
     const url = `https://api.punkapi.com/v2/beers?beer_name=${searchValue}`;
 
     fetch(url)
@@ -31,6 +34,7 @@ class HomePage extends React.Component {
   };
 
   openDetails = item => {
+    //Opening the other component
     this.setState({ displayComponent: true })
     this.render = () => { return <BeerDescription data={item} />; }
   }
@@ -41,7 +45,6 @@ class HomePage extends React.Component {
   }
 
   render() {
-
     return (
       <div style={{ background: this.state.color }} id="main">
         <div className="container">
