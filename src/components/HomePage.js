@@ -1,6 +1,6 @@
-import React from "react"
-import BeerDescription from "./BeerDescription"
-import "./HomePage.css"
+import React from "react";
+import BeerDescription from "./BeerDescription";
+import "./HomePage.css";
 
 
 class HomePage extends React.Component {
@@ -22,14 +22,14 @@ class HomePage extends React.Component {
   };
 
   search = searchValue => {
-    //Calling th API and fetching the data
+    //Calling the API and fetching the data
     const url = `https://api.punkapi.com/v2/beers?beer_name=${searchValue}`;
 
     fetch(url)
       .then(results => results.json())
       .then(data => {
         this.setState({ beers: data });
-        console.log(data)
+        console.log(data);
       });
   };
 
@@ -70,4 +70,4 @@ class HomePage extends React.Component {
     );
   }
 }
-export default HomePage
+export default HomePage;

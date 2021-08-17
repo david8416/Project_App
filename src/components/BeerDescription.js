@@ -1,7 +1,7 @@
-import React from "react"
-import "./BeerDescription.css"
-import Button from 'react-bootstrap/Button'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+import "./BeerDescription.css";
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -9,7 +9,7 @@ class BeerDescription extends React.Component {
   constructor(props) {
     super(props);
     this.state = { color: '#000000' }
-  }
+  };
   render() {
     //Using the object from the other component to fill in the table
     return (
