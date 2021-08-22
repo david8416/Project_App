@@ -3,6 +3,7 @@
 How To Run
   1. Run "npm i" to install the modules that will be needed for this project
   2. After navigating to the folder where the project is located, run "npm start" to launch the project in your browser.
+  3. The node version this should be ran with is v16.6.1.
   
 Design Choices
   - I tried to keep the overall application fairly simple, using a mix of the react framework along with bootstrap to help 
